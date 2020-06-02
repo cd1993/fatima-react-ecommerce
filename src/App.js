@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Products from './components/Products';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -32,10 +33,11 @@ function App() {
                     </nav>
                 </header>
                 <Switch>
-                    <Route path="/"><Home /></Route>
+                    <Route exact path="/"><Home /></Route>
                     <Route path="/products"><Products /></Route>
                     <Route path="/contact"><Contact/></Route>
                 </Switch>
+                <Footer />
             </div>
         </Router>
   );
